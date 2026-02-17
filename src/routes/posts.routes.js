@@ -5,6 +5,7 @@ const router = express.Router();
 import postController from '../controllers/posts.controller.js';
 
 router.get('/', postController.getAllPosts);
+router.get('/:id', postController.getPostById);
 
 // router.get('/', (req, res) => {
 //   res.send('Fetching all blog posts from the modular router!');
